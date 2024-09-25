@@ -1,0 +1,126 @@
+Removing password for user root.
+passwd: Success
+Locking password for user root.
+passwd: Success
+Creating grub.conf for pvgrub
+Linking menu.lst to old-style grub.conf for pv-grubSetting default runlevel to multiuser text mode.
+Removing linux-firmware package.
+Resolving Dependencies
+--> Running transaction check
+---> Package linux-firmware.noarch 0:20180220-62.git6d51311.el7 will be erased
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package          Arch     Version                        Repository       Size
+================================================================================
+Removing:
+ linux-firmware   noarch   20180220-62.git6d51311.el7     @anaconda/7.5   169 M
+
+Transaction Summary
+================================================================================
+Remove  1 Package
+
+Installed size: 169 M
+Downloading packages:
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Erasing    : linux-firmware-20180220-62.git6d51311.el7.noarch             1/1 
+  Verifying  : linux-firmware-20180220-62.git6d51311.el7.noarch             1/1 
+
+Removed:
+  linux-firmware.noarch 0:20180220-62.git6d51311.el7                            
+
+Complete!
+Removing firewalld.
+Resolving Dependencies
+--> Running transaction check
+---> Package firewalld.noarch 0:0.4.4.4-14.el7 will be erased
+--> Finished Dependency Resolution
+--> Finding unneeded leftover dependencies
+---> Marking ipset to be removed - no longer needed by firewalld
+---> Marking firewalld-filesystem to be removed - no longer needed by firewalld
+---> Marking ebtables to be removed - no longer needed by firewalld
+---> Marking python-firewall to be removed - no longer needed by firewalld
+---> Marking ipset-libs to be removed - no longer needed by ipset
+---> Marking python-slip-dbus to be removed - no longer needed by python-firewall
+---> Marking python-slip to be removed - no longer needed by python-slip-dbus
+Found and removing 7 unneeded dependencies
+--> Running transaction check
+---> Package ebtables.x86_64 0:2.0.10-16.el7 will be erased
+---> Package firewalld-filesystem.noarch 0:0.4.4.4-14.el7 will be erased
+---> Package ipset.x86_64 0:6.29-1.el7 will be erased
+---> Package ipset-libs.x86_64 0:6.29-1.el7 will be erased
+---> Package python-firewall.noarch 0:0.4.4.4-14.el7 will be erased
+---> Package python-slip.noarch 0:0.4.0-4.el7 will be erased
+---> Package python-slip-dbus.noarch 0:0.4.0-4.el7 will be erased
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+
+================================================================================
+ Package                  Arch       Version            Repository         Size
+================================================================================
+Removing:
+ firewalld                noarch     0.4.4.4-14.el7     @anaconda/7.5     1.8 M
+Removing for dependencies:
+ ebtables                 x86_64     2.0.10-16.el7      @anaconda/7.5     343 k
+ firewalld-filesystem     noarch     0.4.4.4-14.el7     @anaconda/7.5     239  
+ ipset                    x86_64     6.29-1.el7         @anaconda/7.5      74 k
+ ipset-libs               x86_64     6.29-1.el7         @anaconda/7.5     264 k
+ python-firewall          noarch     0.4.4.4-14.el7     @anaconda/7.5     1.8 M
+ python-slip              noarch     0.4.0-4.el7        @anaconda/7.5      60 k
+ python-slip-dbus         noarch     0.4.0-4.el7        @anaconda/7.5      75 k
+
+Transaction Summary
+================================================================================
+Remove  1 Package (+7 Dependent packages)
+
+Installed size: 4.3 M
+Downloading packages:
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  Erasing    : firewalld-0.4.4.4-14.el7.noarch                              1/8 
+  Erasing    : python-firewall-0.4.4.4-14.el7.noarch                        2/8 
+  Erasing    : python-slip-dbus-0.4.0-4.el7.noarch                          3/8 
+  Erasing    : ipset-6.29-1.el7.x86_64                                      4/8 
+  Erasing    : python-slip-0.4.0-4.el7.noarch                               5/8 
+  Erasing    : firewalld-filesystem-0.4.4.4-14.el7.noarch                   6/8 
+  Erasing    : ipset-libs-6.29-1.el7.x86_64                                 7/8 
+  Erasing    : ebtables-2.0.10-16.el7.x86_64                                8/8 
+  Verifying  : ipset-libs-6.29-1.el7.x86_64                                 1/8 
+  Verifying  : firewalld-filesystem-0.4.4.4-14.el7.noarch                   2/8 
+  Verifying  : python-firewall-0.4.4.4-14.el7.noarch                        3/8 
+  Verifying  : firewalld-0.4.4.4-14.el7.noarch                              4/8 
+  Verifying  : python-slip-0.4.0-4.el7.noarch                               5/8 
+  Verifying  : python-slip-dbus-0.4.0-4.el7.noarch                          6/8 
+  Verifying  : ipset-6.29-1.el7.x86_64                                      7/8 
+  Verifying  : ebtables-2.0.10-16.el7.x86_64                                8/8 
+
+Removed:
+  firewalld.noarch 0:0.4.4.4-14.el7                                             
+
+Dependency Removed:
+  ebtables.x86_64 0:2.0.10-16.el7                                               
+  firewalld-filesystem.noarch 0:0.4.4.4-14.el7                                  
+  ipset.x86_64 0:6.29-1.el7                                                     
+  ipset-libs.x86_64 0:6.29-1.el7                                                
+  python-firewall.noarch 0:0.4.4.4-14.el7                                       
+  python-slip.noarch 0:0.4.0-4.el7                                              
+  python-slip-dbus.noarch 0:0.4.0-4.el7                                         
+
+Complete!
+Getty fixesNetwork fixes.
+Cleaning old yum repodata.
+There are no enabled repos.
+ Run "yum repolist all" to see the repos you have.
+ To enable Red Hat Subscription Management repositories:
+     subscription-manager repos --enable <repo>
+ To enable custom repositories:
+     yum-config-manager --enable <repo>
+Fixing SELinux contexts.

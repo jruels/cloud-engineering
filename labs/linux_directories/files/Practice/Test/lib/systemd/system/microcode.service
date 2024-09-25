@@ -1,0 +1,12 @@
+[Unit]
+Description=Load CPU microcode update
+After=basic.target
+ConditionVirtualization=false
+ConditionPathExists=/sys/devices/system/cpu/microcode/reload
+
+[Service]
+Type=oneshot
+RemainAfterExit=no
+ExecStart=/usr/bin/bash -c 'grep -l GenuineIntel /proc/cpuinfo | xargs grep -l -E "model[[:space:]]*: 79$" > /dev/null || echo 1 > /sys/devices/system/cpu/microcode/reload'
+[Install]
+WantedBy=basic.target

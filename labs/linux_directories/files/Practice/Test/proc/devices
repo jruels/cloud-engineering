@@ -1,0 +1,40 @@
+Character devices:
+  1 mem
+  4 /dev/vc/0
+  4 tty
+  4 ttyS
+  5 /dev/tty
+  5 /dev/console
+  5 /dev/ptmx
+  7 vcs
+ 10 misc
+ 13 input
+ 29 fb
+ 99 ppdev
+128 ptm
+136 pts
+162 raw
+180 usb
+188 ttyUSB
+189 usb_device
+202 cpu/msr
+203 cpu/cpuid
+226 drm
+245 aux
+246 hidraw
+247 usbmon
+248 bsg
+249 hmm_device
+250 iio
+251 watchdog
+252 rtc
+253 dax
+254 tpm
+
+Block devices:
+  2 fd
+259 blkext
+  9 md
+202 xvd
+253 device-mapper
+254 mdp

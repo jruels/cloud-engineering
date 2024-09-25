@@ -1,0 +1,147 @@
+17:40:52,831 INFO anaconda: /sbin/anaconda 21.48.22.134-1
+17:40:53,377 INFO anaconda: created new libuser.conf at /tmp/libuser.4NLTHa with instPath="/mnt/sysimage"
+17:40:53,380 INFO anaconda: 3145728 kB (3072 MB) are available
+17:40:53,407 INFO anaconda: check_memory(): total:3072, needed:670, graphical:760
+17:40:53,426 INFO anaconda: anaconda called with cmdline = ['/sbin/anaconda']
+17:40:53,427 INFO anaconda: Default encoding = utf-8 
+17:40:53,484 INFO anaconda: Running kickstart %%pre script(s)
+17:40:53,485 INFO anaconda.stdout: Running pre-installation scripts
+17:40:53,557 INFO anaconda: All kickstart %%pre script(s) have been run
+17:40:53,559 INFO anaconda: Parsing kickstart: /run/install/ks.cfg
+17:40:54,110 INFO anaconda: network: setting "link" for missing --device specification in kickstart
+17:40:54,377 DEBUG anaconda: scripts found for locale en_US.UTF-8: ['Latn']
+17:40:54,378 DEBUG anaconda: console fonts found for locale en_US.UTF-8: ['latarcyrheb-sun16']
+17:40:54,379 DEBUG anaconda: setting console font to latarcyrheb-sun16
+17:40:54,408 DEBUG anaconda: console font set successfully to latarcyrheb-sun16
+17:40:54,410 DEBUG anaconda: setting locale to: en_US.UTF-8
+17:40:54,430 DEBUG anaconda: network: devices found ['eth0']
+17:40:54,456 DEBUG anaconda: network: ensure single initramfs connections
+17:40:54,536 DEBUG anaconda: network: apply kickstart
+17:40:54,665 DEBUG anaconda: network: pre kickstart - updating settings of device eth0
+17:40:54,775 DEBUG anaconda: network: pre kickstart - activating connection 4b47018e-4747-47e9-a982-f864e324ba9a for eth0
+17:40:54,808 DEBUG anaconda: network: kickstart pre section applied for devices ['eth0']
+17:40:54,855 DEBUG anaconda: network: create missing ifcfg files
+17:40:55,048 DEBUG anaconda: network: set real ONBOOT value
+17:40:55,131 DEBUG anaconda: network: setting ONBOOT value of eth0 to True
+17:40:55,301 DEBUG anaconda: network: real kickstart ONBOOT value set for devices ['eth0']
+17:40:55,340 DEBUG anaconda: updating hostname localhost.localdomain
+17:40:55,482 INFO anaconda: Running Thread: AnaWaitForConnectingNMThread (140471704774400)
+17:40:55,486 WARN anaconda.stdout: Not asking for VNC because of an automated install
+17:40:55,492 WARN anaconda.stdout: Not asking for VNC because text mode was explicitly asked for in kickstart
+17:40:55,507 INFO anaconda: Display mode = t
+17:40:55,517 INFO anaconda: 3145728 kB (3072 MB) are available
+17:40:55,562 INFO anaconda: got 0 NTP servers from DHCP
+17:40:55,566 INFO anaconda: Thread Done: AnaWaitForConnectingNMThread (140471704774400)
+17:40:55,572 INFO anaconda: check_memory(): total:3072, needed:670, graphical:760
+17:40:55,718 DEBUG anaconda: Searching /usr/lib64/python2.7/site-packages/pyanaconda/installclasses.
+17:40:55,733 DEBUG anaconda: Found Red Hat Enterprise Linux (RHELBaseInstallClass).
+17:40:55,734 DEBUG anaconda: Found Red Hat Enterprise Linux Atomic Host (RHELAtomicInstallClass).
+17:40:55,735 DEBUG anaconda: Found oVirt Node Next (OvirtBaseInstallClass).
+17:40:55,736 DEBUG anaconda: Found Red Hat Virtualization (RHEVInstallClass).
+17:40:55,736 DEBUG anaconda: Found Fedora (FedoraBaseInstallClass).
+17:40:55,738 INFO anaconda: Using a visible install class Red Hat Enterprise Linux (RHELBaseInstallClass).
+17:40:56,598 INFO anaconda: boot loader GRUB2 on X86 platform
+17:40:56,701 DEBUG anaconda: LABEL=OEMDRV matches [] for devicetree=None and disks_only=True
+17:40:56,703 INFO anaconda: Running Thread: AnaStorageThread (140471704774400)
+17:40:56,731 INFO anaconda: Running Thread: AnaTimeInitThread (140471659849472)
+17:40:56,742 INFO anaconda: Geolocation is disabled due to automated kickstart based installation.
+17:40:56,743 INFO anaconda: Running Thread: AnaPayloadRestartThread (140471650404096)
+17:40:56,745 INFO anaconda: Thread Done: AnaPayloadRestartThread (140471650404096)
+17:40:56,746 INFO anaconda: Running Thread: AnaPayloadThread (140471642011392)
+17:40:57,003 INFO anaconda: Thread Done: AnaTimeInitThread (140471659849472)
+17:40:57,010 INFO anaconda: Adding controller: SummaryHub
+17:40:57,426 INFO anaconda: Module initialized: LangSpoke
+17:40:57,428 INFO anaconda: Module initialized: TimeSpoke
+17:40:57,436 INFO anaconda: Running Thread: AnaSourceWatcher (140471659849472)
+17:40:57,441 INFO anaconda: Running Thread: AnaSoftwareWatcher (140471650404096)
+17:40:57,452 INFO anaconda: Running Thread: AnaStorageWatcher (140471633618688)
+17:40:57,706 INFO anaconda: Module initialized: NetworkSpoke
+17:40:57,710 INFO anaconda: Module initialized: PasswordSpoke
+17:40:57,711 INFO anaconda: Module initialized: UserSpoke
+17:40:57,712 INFO anaconda: Initialization of all modules (8) has been started.
+17:40:58,164 INFO anaconda: boot loader GRUB2 on X86 platform
+17:40:58,328 INFO anaconda: Thread Done: AnaStorageThread (140471704774400)
+17:40:58,404 INFO anaconda: Module initialized: StorageSpoke
+17:40:58,408 INFO anaconda: Thread Done: AnaStorageWatcher (140471633618688)
+17:41:01,165 INFO anaconda: Thread Done: AnaPayloadThread (140471642011392)
+17:41:01,166 INFO anaconda: Module initialized: SourceSpoke
+17:41:01,166 INFO anaconda: Thread Done: AnaSourceWatcher (140471659849472)
+17:41:01,168 INFO anaconda: Running Thread: AnaCheckSoftwareThread (140471659849472)
+17:41:05,927 INFO anaconda: Thread Done: AnaCheckSoftwareThread (140471659849472)
+17:41:05,928 INFO anaconda: Module initialized: SoftwareSpoke
+17:41:05,928 INFO anaconda: All modules have been initialized.
+17:41:05,928 INFO anaconda: Thread Done: AnaSoftwareWatcher (140471650404096)
+17:41:11,372 DEBUG anaconda: new disk order: []
+17:41:11,373 DEBUG anaconda: Bootloader: /boot partition is not present, dry run True
+17:41:11,374 DEBUG anaconda: Bootloader: fallback use first disk return from Blivet 'vda' as boot drive, dry run True
+17:41:11,534 DEBUG anaconda: new disk order: []
+17:41:11,535 DEBUG anaconda: Bootloader: /boot partition is not present, dry run False
+17:41:11,536 DEBUG anaconda: Bootloader: fallback use first disk return from Blivet 'vda' as boot drive, dry run False
+17:41:11,547 DEBUG anaconda: _is_valid_disklabel(vda) returning True
+17:41:11,548 DEBUG anaconda: _is_valid_size(vda) returning True
+17:41:11,549 DEBUG anaconda: _is_valid_location(vda) returning True
+17:41:11,550 DEBUG anaconda: _is_valid_format(vda) returning True
+17:41:11,551 DEBUG anaconda: is_valid_stage1_device(vda) returning True
+17:41:11,582 DEBUG anaconda: _is_valid_disklabel(vda) returning True
+17:41:11,583 DEBUG anaconda: _is_valid_size(vda) returning True
+17:41:11,584 DEBUG anaconda: _is_valid_location(vda) returning True
+17:41:11,585 DEBUG anaconda: _is_valid_format(vda) returning True
+17:41:11,585 DEBUG anaconda: is_valid_stage1_device(vda) returning True
+17:41:11,586 DEBUG anaconda: _is_valid_disklabel(vda2) returning True
+17:41:11,587 DEBUG anaconda: _is_valid_size(vda2) returning True
+17:41:11,588 DEBUG anaconda: _is_valid_location(vda2) returning True
+17:41:11,589 DEBUG anaconda: _is_valid_partition(vda2) returning True
+17:41:11,590 DEBUG anaconda: _is_valid_format(vda2) returning True
+17:41:11,591 DEBUG anaconda: is_valid_stage2_device(vda2) returning True
+17:41:11,599 DEBUG anaconda: Storage check started with constraints {'must_be_on_linuxfs': set(['/tmp', '/var', '/usr', '/home', '/', '/usr/lib', '/usr/share']), 'must_be_on_root': set(['/etc', '/bin', '/proc', '/sbin', '/dev', '/lib', 'lost+found', '/mnt', '/root']), 'min_ram': 320, 'req_partition_sizes': {}, 'min_root': Size('250 MiB'), 'must_not_be_on_root': set([]), 'root_device_types': set([]), 'min_partition_sizes': {'/boot': Size('200 MiB'), '/home': Size('100 MiB'), '/var': Size('384 MiB'), '/tmp': Size('50 MiB'), '/usr': Size('250 MiB')}}.
+17:41:11,601 DEBUG anaconda: Run sanity check verify_root.
+17:41:11,602 DEBUG anaconda: Run sanity check verify_partition_sizes.
+17:41:11,603 DEBUG anaconda: Run sanity check verify_partition_format_sizes.
+17:41:11,603 DEBUG anaconda: Run sanity check verify_bootloader.
+17:41:11,604 DEBUG anaconda: Run sanity check verify_gpt_biosboot.
+17:41:11,605 DEBUG anaconda: Run sanity check verify_swap.
+17:41:11,606 DEBUG anaconda: Found sanity warning: You have not specified a swap partition. Although not strictly required in all cases, it will significantly improve performance for most installations.
+17:41:11,607 DEBUG anaconda: Run sanity check verify_swap_uuid.
+17:41:11,607 DEBUG anaconda: Run sanity check verify_mountpoints_on_linuxfs.
+17:41:11,608 DEBUG anaconda: Run sanity check verify_mountpoints_on_root.
+17:41:11,608 DEBUG anaconda: Run sanity check verify_mountpoints_not_on_root.
+17:41:11,609 DEBUG anaconda: Run sanity check verify_luks_devices_have_key.
+17:41:11,609 DEBUG anaconda: Storage check finished with failure(s).
+17:41:11,610 WARN anaconda: You have not specified a swap partition. Although not strictly required in all cases, it will significantly improve performance for most installations.
+17:41:11,617 DEBUG anaconda: Entered hub: SummaryHub
+17:41:11,730 INFO anaconda: fs space: 6144 MiB  needed: 1155.58 MiB
+17:41:11,759 DEBUG anaconda: Left hub: SummaryHub
+17:41:11,760 DEBUG anaconda: Entered spoke: ProgressSpoke
+17:41:11,770 INFO anaconda: Running Thread: AnaInstallThread (140471659849472)
+17:41:12,504 INFO anaconda: Setting up the installation environment
+17:41:12,506 INFO anaconda: Setting up the installation environment
+17:41:13,226 INFO anaconda: Creating xfs on /dev/vda2
+17:41:13,624 INFO anaconda: Created xfs on /dev/vda2
+17:41:13,645 INFO anaconda: Creating biosboot on /dev/vda1
+17:41:13,760 INFO anaconda: Created biosboot on /dev/vda1
+17:41:14,264 INFO anaconda: Running pre-installation scripts
+17:41:14,265 INFO anaconda: Running pre-installation scripts
+17:49:59,368 INFO anaconda: Installing boot loader
+17:49:59,370 INFO anaconda: boot loader stage1 target device is vda
+17:49:59,371 INFO anaconda: boot loader stage2 target device is vda2
+17:49:59,378 DEBUG anaconda: new default image: <pyanaconda.bootloader.LinuxBootLoaderImage object at 0x7fc21da4b950>
+17:50:00,113 INFO anaconda: bootloader.py: mbr will be updated for grub2
+17:50:04,685 INFO anaconda: bootloader.py: used boot args: console=ttyS0,115200n8 console=tty0 net.ifnames=0 crashkernel=auto 
+17:50:06,311 INFO anaconda: Installing boot loader
+17:50:06,313 INFO anaconda: Performing post-installation setup tasks
+17:50:06,327 INFO anaconda: Performing post-installation setup tasks
+17:50:06,328 INFO anaconda: Thread Done: AnaInstallThread (140471659849472)
+17:50:06,333 INFO anaconda: Running Thread: AnaConfigurationThread (140471650404096)
+17:50:06,334 INFO anaconda: Configuring installed system
+17:50:07,288 INFO anaconda: Configuring installed system
+17:50:07,290 INFO anaconda: Writing network configuration
+17:50:07,328 INFO anaconda: Writing network configuration
+17:50:07,329 INFO anaconda: Creating users
+17:50:07,330 INFO anaconda: Clearing libuser.conf at /tmp/libuser.4NLTHa
+17:50:07,504 INFO anaconda: Creating users
+17:50:07,506 INFO anaconda: Configuring addons
+17:50:07,523 INFO anaconda: Configuring addons
+17:50:07,526 INFO anaconda: Generating initramfs
+17:51:24,932 INFO anaconda: Generating initramfs
+17:51:24,933 INFO anaconda: Running post-installation scripts
+17:51:24,934 INFO anaconda: Running kickstart %%post script(s)

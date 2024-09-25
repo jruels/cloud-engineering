@@ -1,0 +1,12 @@
+1:	lo
+	inet  224.0.0.1
+	inet6 ff02::1
+	inet6 ff01::1
+2:	eth0
+	link  01:00:5e:00:00:01
+	link  33:33:00:00:00:01
+	link  33:33:ff:87:a0:06
+	inet  224.0.0.1
+	inet6 ff02::1:ff87:a006
+	inet6 ff02::1
+	inet6 ff01::1

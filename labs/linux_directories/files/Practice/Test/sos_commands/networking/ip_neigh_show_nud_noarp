@@ -1,0 +1,4 @@
+127.0.0.1 dev lo lladdr 00:00:00:00:00:00 NOARP
+ff02::2 dev eth0 lladdr 33:33:00:00:00:02 NOARP
+ff02::16 dev eth0 lladdr 33:33:00:00:00:16 NOARP
+ff02::1:ff87:a006 dev eth0 lladdr 33:33:ff:87:a0:06 NOARP

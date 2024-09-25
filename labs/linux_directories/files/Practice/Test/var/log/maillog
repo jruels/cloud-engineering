@@ -1,0 +1,10 @@
+Apr 23 16:14:39 ip-172-31-94-65 postfix/postfix-script[1024]: starting the Postfix mail system
+Apr 23 16:14:39 ip-172-31-94-65 postfix/master[1029]: daemon started -- version 2.10.1, configuration /etc/postfix
+Apr 23 16:52:30 ip-172-31-94-65 postfix/postfix-script[1020]: starting the Postfix mail system
+Apr 23 16:52:30 ip-172-31-94-65 postfix/master[1025]: daemon started -- version 2.10.1, configuration /etc/postfix
+Apr 24 16:47:14 ip-172-31-94-65 postfix/postfix-script[1029]: starting the Postfix mail system
+Apr 24 16:47:14 ip-172-31-94-65 postfix/master[1031]: daemon started -- version 2.10.1, configuration /etc/postfix
+May 22 18:37:08 ip-172-31-82-57 postfix/postfix-script[1020]: starting the Postfix mail system
+May 22 18:37:08 ip-172-31-82-57 postfix/master[1025]: daemon started -- version 2.10.1, configuration /etc/postfix
+Mar 22 20:35:08 ip-10-0-1-11 postfix/postfix-script[1022]: starting the Postfix mail system
+Mar 22 20:35:08 ip-10-0-1-11 postfix/master[1027]: daemon started -- version 2.10.1, configuration /etc/postfix

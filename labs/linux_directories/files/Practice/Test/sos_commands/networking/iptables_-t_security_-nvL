@@ -1,0 +1,20 @@
+Chain INPUT (policy ACCEPT 3884 packets, 42M bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 4048   42M INPUT_direct  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 FORWARD_direct  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+
+Chain OUTPUT (policy ACCEPT 2834 packets, 421K bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 2900  426K OUTPUT_direct  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+
+Chain FORWARD_direct (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain INPUT_direct (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT_direct (1 references)
+ pkts bytes target     prot opt in     out     source               destination         

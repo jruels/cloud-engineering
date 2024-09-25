@@ -1,0 +1,23 @@
+00000000-00000fff : reserved
+00001000-0009dfff : System RAM
+0009e000-0009ffff : reserved
+000a0000-000bffff : PCI Bus 0000:00
+000c0000-000c8bff : Video ROM
+000e0000-000fffff : reserved
+  000f0000-000fffff : System ROM
+00100000-3fffffff : System RAM
+  29800000-29f28306 : Kernel code
+  29f28307-2a54f7ff : Kernel data
+  2a722000-2aa2cfff : Kernel bss
+f0000000-fbffffff : PCI Bus 0000:00
+  f0000000-f1ffffff : 0000:00:02.0
+    f0000000-f1ffffff : cirrusdrmfb_vram
+  f2000000-f2ffffff : 0000:00:03.0
+    f2000000-f2ffffff : xen-platform-pci
+  f3000000-f3000fff : 0000:00:02.0
+    f3000000-f3000fff : cirrusdrmfb_mmio
+fc000000-ffffffff : reserved
+  fec00000-fec003ff : IOAPIC 0
+  fed00000-fed003ff : HPET 0
+    fed00000-fed003ff : PNP0103:00
+  fee00000-fee00fff : Local APIC

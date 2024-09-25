@@ -1,0 +1,106 @@
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+    pkts      bytes target     prot opt in     out     source               destination         
+    4059 42008541 ACCEPT     all  --  *      *       0.0.0.0/0            0.0.0.0/0            ctstate RELATED,ESTABLISHED
+       0        0 ACCEPT     all  --  lo     *       0.0.0.0/0            0.0.0.0/0           
+       1       64 INPUT_direct  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+       1       64 INPUT_ZONES_SOURCE  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+       1       64 INPUT_ZONES  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+       0        0 DROP       all  --  *      *       0.0.0.0/0            0.0.0.0/0            ctstate INVALID
+       0        0 REJECT     all  --  *      *       0.0.0.0/0            0.0.0.0/0            reject-with icmp-host-prohibited
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+    pkts      bytes target     prot opt in     out     source               destination         
+       0        0 ACCEPT     all  --  *      *       0.0.0.0/0            0.0.0.0/0            ctstate RELATED,ESTABLISHED
+       0        0 ACCEPT     all  --  lo     *       0.0.0.0/0            0.0.0.0/0           
+       0        0 FORWARD_direct  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+       0        0 FORWARD_IN_ZONES_SOURCE  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+       0        0 FORWARD_IN_ZONES  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+       0        0 FORWARD_OUT_ZONES_SOURCE  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+       0        0 FORWARD_OUT_ZONES  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+       0        0 DROP       all  --  *      *       0.0.0.0/0            0.0.0.0/0            ctstate INVALID
+       0        0 REJECT     all  --  *      *       0.0.0.0/0            0.0.0.0/0            reject-with icmp-host-prohibited
+
+Chain OUTPUT (policy ACCEPT 2767 packets, 414087 bytes)
+    pkts      bytes target     prot opt in     out     source               destination         
+    2912   428700 OUTPUT_direct  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+
+Chain FORWARD_IN_ZONES (1 references)
+    pkts      bytes target     prot opt in     out     source               destination         
+       0        0 FWDI_public  all  --  eth0   *       0.0.0.0/0            0.0.0.0/0           [goto] 
+       0        0 FWDI_public  all  --  +      *       0.0.0.0/0            0.0.0.0/0           [goto] 
+
+Chain FORWARD_IN_ZONES_SOURCE (1 references)
+    pkts      bytes target     prot opt in     out     source               destination         
+
+Chain FORWARD_OUT_ZONES (1 references)
+    pkts      bytes target     prot opt in     out     source               destination         
+       0        0 FWDO_public  all  --  *      eth0    0.0.0.0/0            0.0.0.0/0           [goto] 
+       0        0 FWDO_public  all  --  *      +       0.0.0.0/0            0.0.0.0/0           [goto] 
+
+Chain FORWARD_OUT_ZONES_SOURCE (1 references)
+    pkts      bytes target     prot opt in     out     source               destination         
+
+Chain FORWARD_direct (1 references)
+    pkts      bytes target     prot opt in     out     source               destination         
+
+Chain FWDI_public (2 references)
+    pkts      bytes target     prot opt in     out     source               destination         
+       0        0 FWDI_public_log  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+       0        0 FWDI_public_deny  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+       0        0 FWDI_public_allow  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+       0        0 ACCEPT     icmp --  *      *       0.0.0.0/0            0.0.0.0/0           
+
+Chain FWDI_public_allow (1 references)
+    pkts      bytes target     prot opt in     out     source               destination         
+
+Chain FWDI_public_deny (1 references)
+    pkts      bytes target     prot opt in     out     source               destination         
+
+Chain FWDI_public_log (1 references)
+    pkts      bytes target     prot opt in     out     source               destination         
+
+Chain FWDO_public (2 references)
+    pkts      bytes target     prot opt in     out     source               destination         
+       0        0 FWDO_public_log  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+       0        0 FWDO_public_deny  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+       0        0 FWDO_public_allow  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+
+Chain FWDO_public_allow (1 references)
+    pkts      bytes target     prot opt in     out     source               destination         
+
+Chain FWDO_public_deny (1 references)
+    pkts      bytes target     prot opt in     out     source               destination         
+
+Chain FWDO_public_log (1 references)
+    pkts      bytes target     prot opt in     out     source               destination         
+
+Chain INPUT_ZONES (1 references)
+    pkts      bytes target     prot opt in     out     source               destination         
+       1       64 IN_public  all  --  eth0   *       0.0.0.0/0            0.0.0.0/0           [goto] 
+       0        0 IN_public  all  --  +      *       0.0.0.0/0            0.0.0.0/0           [goto] 
+
+Chain INPUT_ZONES_SOURCE (1 references)
+    pkts      bytes target     prot opt in     out     source               destination         
+
+Chain INPUT_direct (1 references)
+    pkts      bytes target     prot opt in     out     source               destination         
+
+Chain IN_public (2 references)
+    pkts      bytes target     prot opt in     out     source               destination         
+       1       64 IN_public_log  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+       1       64 IN_public_deny  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+       1       64 IN_public_allow  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+       0        0 ACCEPT     icmp --  *      *       0.0.0.0/0            0.0.0.0/0           
+
+Chain IN_public_allow (1 references)
+    pkts      bytes target     prot opt in     out     source               destination         
+       1       64 ACCEPT     tcp  --  *      *       0.0.0.0/0            0.0.0.0/0            tcp dpt:22 ctstate NEW
+
+Chain IN_public_deny (1 references)
+    pkts      bytes target     prot opt in     out     source               destination         
+
+Chain IN_public_log (1 references)
+    pkts      bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT_direct (1 references)
+    pkts      bytes target     prot opt in     out     source               destination         

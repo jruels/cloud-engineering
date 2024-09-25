@@ -1,0 +1,40 @@
+Chain PREROUTING (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 ACCEPT     icmpv6    *      *       ::/0                 ::/0                 ipv6-icmptype 134
+    0     0 DROP       all      *      *       ::/0                 ::/0                 rpfilter invert
+    0     0 PREROUTING_direct  all      *      *       ::/0                 ::/0                
+    0     0 PREROUTING_ZONES_SOURCE  all      *      *       ::/0                 ::/0                
+    0     0 PREROUTING_ZONES  all      *      *       ::/0                 ::/0                
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 OUTPUT_direct  all      *      *       ::/0                 ::/0                
+
+Chain OUTPUT_direct (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain PREROUTING_ZONES (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 PRE_public  all      eth0   *       ::/0                 ::/0                [goto] 
+    0     0 PRE_public  all      +      *       ::/0                 ::/0                [goto] 
+
+Chain PREROUTING_ZONES_SOURCE (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain PREROUTING_direct (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain PRE_public (2 references)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 PRE_public_log  all      *      *       ::/0                 ::/0                
+    0     0 PRE_public_deny  all      *      *       ::/0                 ::/0                
+    0     0 PRE_public_allow  all      *      *       ::/0                 ::/0                
+
+Chain PRE_public_allow (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain PRE_public_deny (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain PRE_public_log (1 references)
+ pkts bytes target     prot opt in     out     source               destination         

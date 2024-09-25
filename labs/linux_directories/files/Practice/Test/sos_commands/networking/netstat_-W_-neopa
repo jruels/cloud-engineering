@@ -1,0 +1,157 @@
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name     Timer
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      0          18772      1143/sshd            off (0.00/0/0)
+tcp        0      0 127.0.0.1:25            0.0.0.0:*               LISTEN      0          17600      1027/master          off (0.00/0/0)
+tcp        0      0 10.0.1.11:22            73.147.247.145:34778    ESTABLISHED 0          21348      1603/sshd: cloud_us  keepalive (6972.66/0/0)
+tcp6       0      0 :::22                   :::*                    LISTEN      0          18774      1143/sshd            off (0.00/0/0)
+tcp6       0      0 ::1:25                  :::*                    LISTEN      0          17601      1027/master          off (0.00/0/0)
+udp        0      0 127.0.0.1:323           0.0.0.0:*                           0          14572      467/chronyd          off (0.00/0/0)
+udp        0      0 0.0.0.0:68              0.0.0.0:*                           0          16058      553/dhclient         off (0.00/0/0)
+udp6       0      0 ::1:323                 :::*                                0          14573      467/chronyd          off (0.00/0/0)
+Active UNIX domain sockets (servers and established)
+Proto RefCnt Flags       Type       State         I-Node   PID/Program name     Path
+unix  2      [ ACC ]     STREAM     LISTENING     21034    1572/nslcd           /var/run/nslcd/socket
+unix  3      [ ]         DGRAM                    7978     1/systemd            /run/systemd/notify
+unix  2      [ ]         DGRAM                    7980     1/systemd            /run/systemd/cgroups-agent
+unix  2      [ ACC ]     STREAM     LISTENING     7998     1/systemd            /run/systemd/journal/stdout
+unix  6      [ ]         DGRAM                    8001     1/systemd            /run/systemd/journal/socket
+unix  18     [ ]         DGRAM                    8003     1/systemd            /dev/log
+unix  2      [ ACC ]     STREAM     LISTENING     17604    1027/master          public/pickup
+unix  2      [ ACC ]     STREAM     LISTENING     17615    1027/master          private/tlsmgr
+unix  2      [ ACC ]     STREAM     LISTENING     17618    1027/master          private/rewrite
+unix  2      [ ACC ]     STREAM     LISTENING     17621    1027/master          private/bounce
+unix  2      [ ACC ]     STREAM     LISTENING     17624    1027/master          private/defer
+unix  2      [ ACC ]     STREAM     LISTENING     17627    1027/master          private/trace
+unix  2      [ ACC ]     STREAM     LISTENING     15982    525/NetworkManager   /var/run/NetworkManager/private-dhcp
+unix  2      [ ACC ]     STREAM     LISTENING     17608    1027/master          public/cleanup
+unix  2      [ ACC ]     STREAM     LISTENING     17611    1027/master          public/qmgr
+unix  2      [ ACC ]     STREAM     LISTENING     17633    1027/master          public/flush
+unix  2      [ ACC ]     STREAM     LISTENING     17649    1027/master          public/showq
+unix  2      [ ACC ]     STREAM     LISTENING     14222    1/systemd            /run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     12192    1/systemd            /run/systemd/private
+unix  2      [ ACC ]     STREAM     LISTENING     17630    1027/master          private/verify
+unix  2      [ ACC ]     STREAM     LISTENING     17637    1027/master          private/proxymap
+unix  2      [ ACC ]     STREAM     LISTENING     17640    1027/master          private/proxywrite
+unix  2      [ ACC ]     STREAM     LISTENING     17643    1027/master          private/smtp
+unix  2      [ ACC ]     STREAM     LISTENING     17646    1027/master          private/relay
+unix  2      [ ACC ]     STREAM     LISTENING     17652    1027/master          private/error
+unix  2      [ ACC ]     STREAM     LISTENING     17655    1027/master          private/retry
+unix  2      [ ACC ]     STREAM     LISTENING     17658    1027/master          private/discard
+unix  2      [ ACC ]     STREAM     LISTENING     17661    1027/master          private/local
+unix  2      [ ACC ]     STREAM     LISTENING     17664    1027/master          private/virtual
+unix  2      [ ACC ]     STREAM     LISTENING     17667    1027/master          private/lmtp
+unix  2      [ ACC ]     STREAM     LISTENING     17670    1027/master          private/anvil
+unix  2      [ ACC ]     STREAM     LISTENING     17673    1027/master          private/scache
+unix  2      [ ACC ]     SEQPACKET  LISTENING     12257    1/systemd            /run/udev/control
+unix  2      [ ]         DGRAM                    12259    1/systemd            /run/systemd/shutdownd
+unix  2      [ ]         DGRAM                    14578    467/chronyd          /var/run/chrony/chronyd.sock
+unix  2      [ ]         DGRAM                    16029    553/dhclient         
+unix  3      [ ]         STREAM     CONNECTED     17659    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     14853    459/polkitd          
+unix  3      [ ]         DGRAM                    13215    353/systemd-udevd    
+unix  2      [ ]         DGRAM                    13111    353/systemd-udevd    
+unix  2      [ ]         DGRAM                    22665    2129/anacron         
+unix  3      [ ]         STREAM     CONNECTED     14854    463/dbus-daemon      /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     17660    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     14826    472/systemd-logind   
+unix  3      [ ]         DGRAM                    13216    353/systemd-udevd    
+unix  3      [ ]         STREAM     CONNECTED     17654    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     14047    416/auditd           
+unix  2      [ ]         DGRAM                    18606    1125/rhnsd           
+unix  3      [ ]         STREAM     CONNECTED     17657    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     14046    416/auditd           
+unix  3      [ ]         STREAM     CONNECTED     17656    1027/master          
+unix  2      [ ]         DGRAM                    14045    416/auditd           
+unix  3      [ ]         STREAM     CONNECTED     19556    463/dbus-daemon      /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     17638    1027/master          
+unix  2      [ ]         DGRAM                    14758    472/systemd-logind   
+unix  3      [ ]         STREAM     CONNECTED     17609    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     17666    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     24422    1/systemd            /run/systemd/journal/stdout
+unix  3      [ ]         DGRAM                    24247    1/systemd            
+unix  3      [ ]         STREAM     CONNECTED     17605    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     17669    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     19555    1225/python          
+unix  3      [ ]         STREAM     CONNECTED     13105    353/systemd-udevd    
+unix  3      [ ]         STREAM     CONNECTED     17610    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     17668    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     17663    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     14827    463/dbus-daemon      /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     16782    759/python           
+unix  3      [ ]         STREAM     CONNECTED     17662    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     17602    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     13113    1/systemd            /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     16783    1/systemd            /run/systemd/journal/stdout
+unix  2      [ ]         STREAM     CONNECTED     21624    1629/sudo            
+unix  3      [ ]         STREAM     CONNECTED     17665    1027/master          
+unix  2      [ ]         DGRAM                    17558    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     15217    1/systemd            /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     15860    525/NetworkManager   
+unix  3      [ ]         STREAM     CONNECTED     17644    1027/master          
+unix  2      [ ]         DGRAM                    14562    467/chronyd          
+unix  3      [ ]         STREAM     CONNECTED     18770    1/systemd            /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     17603    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     14598    463/dbus-daemon      
+unix  3      [ ]         STREAM     CONNECTED     17645    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     21518    1603/sshd: cloud_us  
+unix  3      [ ]         STREAM     CONNECTED     17639    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     15861    463/dbus-daemon      /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     17642    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     17641    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     18761    1143/sshd            
+unix  3      [ ]         STREAM     CONNECTED     15241    525/NetworkManager   
+unix  3      [ ]         STREAM     CONNECTED     17651    1027/master          
+unix  2      [ ]         DGRAM                    21032    1572/nslcd           
+unix  3      [ ]         STREAM     CONNECTED     15216    525/NetworkManager   
+unix  2      [ ]         DGRAM                    14984    459/polkitd          
+unix  3      [ ]         STREAM     CONNECTED     17653    1027/master          
+unix  2      [ ]         DGRAM                    15223    525/NetworkManager   
+unix  2      [ ]         DGRAM                    21511    1603/sshd: cloud_us  
+unix  3      [ ]         STREAM     CONNECTED     14550    463/dbus-daemon      
+unix  3      [ ]         STREAM     CONNECTED     17606    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     17648    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     15242    463/dbus-daemon      /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     14599    463/dbus-daemon      
+unix  3      [ ]         STREAM     CONNECTED     17647    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     14662    1/systemd            /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     14551    1/systemd            /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     17650    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     21517    1607/sshd: cloud_us  
+unix  2      [ ]         STREAM     CONNECTED     21594    1623/sudo            
+unix  3      [ ]         STREAM     CONNECTED     14661    472/systemd-logind   
+unix  3      [ ]         STREAM     CONNECTED     17626    1027/master          
+unix  2      [ ]         DGRAM                    17704    1031/qmgr            
+unix  3      [ ]         STREAM     CONNECTED     17629    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     24338    3149/systemd-hostna  
+unix  3      [ ]         STREAM     CONNECTED     17628    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     14558    1/systemd            
+unix  3      [ ]         STREAM     CONNECTED     17623    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     20345    1/systemd            /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     17622    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     17625    1027/master          
+unix  2      [ ]         DGRAM                    15245    463/dbus-daemon      
+unix  3      [ ]         STREAM     CONNECTED     17635    1027/master          
+unix  3      [ ]         DGRAM                    24246    1/systemd            
+unix  2      [ ]         DGRAM                    20340    1419/crond           
+unix  3      [ ]         STREAM     CONNECTED     17636    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     17631    1027/master          
+unix  2      [ ]         DGRAM                    17722    1030/pickup          
+unix  3      [ ]         STREAM     CONNECTED     20338    1419/crond           
+unix  3      [ ]         STREAM     CONNECTED     17632    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     17675    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     17612    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     17672    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     17671    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     14600    463/dbus-daemon      /run/dbus/system_bus_socket
+unix  2      [ ]         DGRAM                    21667    1630/su              
+unix  3      [ ]         STREAM     CONNECTED     17674    1027/master          
+unix  2      [ ]         DGRAM                    18487    1092/rsyslogd        
+unix  3      [ ]         STREAM     CONNECTED     17613    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     17449    759/python           
+unix  3      [ ]         STREAM     CONNECTED     17619    1027/master          
+unix  2      [ ]         DGRAM                    20932    1/systemd            
+unix  2      [ ]         DGRAM                    12244    316/systemd-journal  
+unix  3      [ ]         STREAM     CONNECTED     17620    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     17450    463/dbus-daemon      /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     17617    1027/master          
+unix  3      [ ]         STREAM     CONNECTED     17616    1027/master          

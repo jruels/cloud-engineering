@@ -1,0 +1,38 @@
+Chain PREROUTING (policy ACCEPT 3761 packets, 41M bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 4048   42M PREROUTING_direct  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+ 4048   42M PREROUTING_ZONES_SOURCE  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+ 4048   42M PREROUTING_ZONES  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+
+Chain OUTPUT (policy ACCEPT 2755 packets, 412K bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 2900  426K OUTPUT_direct  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+
+Chain OUTPUT_direct (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain PREROUTING_ZONES (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+ 3761   41M PRE_public  all  --  eth0   *       0.0.0.0/0            0.0.0.0/0           [goto] 
+  123  302K PRE_public  all  --  +      *       0.0.0.0/0            0.0.0.0/0           [goto] 
+
+Chain PREROUTING_ZONES_SOURCE (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain PREROUTING_direct (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain PRE_public (2 references)
+ pkts bytes target     prot opt in     out     source               destination         
+ 3884   42M PRE_public_log  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+ 3884   42M PRE_public_deny  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+ 3884   42M PRE_public_allow  all  --  *      *       0.0.0.0/0            0.0.0.0/0           
+
+Chain PRE_public_allow (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain PRE_public_deny (1 references)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain PRE_public_log (1 references)
+ pkts bytes target     prot opt in     out     source               destination         

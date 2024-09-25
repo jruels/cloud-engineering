@@ -1,0 +1,18 @@
+# This is private data. Do not parse.
+UID=1002
+USER=cloud_user
+ACTIVE=1
+STATE=active
+REMOTE=1
+STOPPING=0
+TYPE=tty
+CLASS=user
+SCOPE=session-1.scope
+FIFO=/run/systemd/sessions/1.ref
+REMOTE_HOST=c-73-147-247-145.hsd1.va.comcast.net
+SERVICE=sshd
+POS=0
+LEADER=1603
+AUDIT=1
+REALTIME=1553288255586348
+MONOTONIC=1356848389

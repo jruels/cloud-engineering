@@ -1,0 +1,15 @@
+2018-04-22 03:30:01,990 [INFO] rhsmd:19209:MainThread @rhsmd:279 - rhsmd started
+2018-04-22 03:30:01,990 [INFO] rhsmd:19209:MainThread @rhsmd:310 - logging subscription status to syslog
+2018-04-22 03:30:02,036 [ERROR] rhsmd:19209:MainThread @identity.py:145 - Reload of consumer identity cert /etc/pki/consumer/cert.pem raised an exception with msg: [Errno 2] No such file or directory: '/etc/pki/consumer/key.pem'
+2018-04-22 03:30:02,037 [ERROR] rhsmd:19209:MainThread @identity.py:145 - Reload of consumer identity cert /etc/pki/consumer/cert.pem raised an exception with msg: [Errno 2] No such file or directory: '/etc/pki/consumer/key.pem'
+2018-04-22 03:30:02,038 [INFO] rhsmd:19209:MainThread @rhsmd:272 - rhsmd: In order for Subscription Manager to provide your system with updates, your system must be registered with the Customer Portal. Please enter your Red Hat login to ensure your system is up-to-date.
+2018-04-23 03:06:01,457 [INFO] rhsmd:21397:MainThread @rhsmd:279 - rhsmd started
+2018-04-23 03:06:01,458 [INFO] rhsmd:21397:MainThread @rhsmd:310 - logging subscription status to syslog
+2018-04-23 03:06:01,528 [ERROR] rhsmd:21397:MainThread @identity.py:145 - Reload of consumer identity cert /etc/pki/consumer/cert.pem raised an exception with msg: [Errno 2] No such file or directory: '/etc/pki/consumer/key.pem'
+2018-04-23 03:06:01,529 [ERROR] rhsmd:21397:MainThread @identity.py:145 - Reload of consumer identity cert /etc/pki/consumer/cert.pem raised an exception with msg: [Errno 2] No such file or directory: '/etc/pki/consumer/key.pem'
+2018-04-23 03:06:01,530 [INFO] rhsmd:21397:MainThread @rhsmd:272 - rhsmd: In order for Subscription Manager to provide your system with updates, your system must be registered with the Customer Portal. Please enter your Red Hat login to ensure your system is up-to-date.
+2018-04-24 17:30:02,587 [INFO] rhsmd:1216:MainThread @rhsmd:279 - rhsmd started
+2018-04-24 17:30:02,588 [INFO] rhsmd:1216:MainThread @rhsmd:310 - logging subscription status to syslog
+2018-04-24 17:30:03,014 [ERROR] rhsmd:1216:MainThread @identity.py:145 - Reload of consumer identity cert /etc/pki/consumer/cert.pem raised an exception with msg: [Errno 2] No such file or directory: '/etc/pki/consumer/key.pem'
+2018-04-24 17:30:03,016 [ERROR] rhsmd:1216:MainThread @identity.py:145 - Reload of consumer identity cert /etc/pki/consumer/cert.pem raised an exception with msg: [Errno 2] No such file or directory: '/etc/pki/consumer/key.pem'
+2018-04-24 17:30:03,016 [INFO] rhsmd:1216:MainThread @rhsmd:272 - rhsmd: In order for Subscription Manager to provide your system with updates, your system must be registered with the Customer Portal. Please enter your Red Hat login to ensure your system is up-to-date.
