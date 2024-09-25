@@ -9,7 +9,7 @@ Instructor will provide lab VM sheet.
 
 ## Labs
 
-Lab 1: [Create a VPC and deploy and EC2 instance](labs/aws_vpc_ec2)  
+Lab 1: [Create a VPC and deploy an EC2 instance](labs/aws_vpc_ec2)  
 Lab 2: [Create a basic VPC and associated components](labs/aws_create_vpc)  
 Lab 3: [Interact with the Linux filesystem](labs/linux_filesystem)  
 Lab 4: [Linux directories and files](labs/linux_directories/)  
