@@ -4,5 +4,5 @@ There are two choices available for this lab. One is step-by-step - copy/paste, 
 
 Choose wisely :)
 
-[Introductory](step-by-step.md)
+[Introductory](step-by-step.md)    
 [Intermediate](objective-based.md)
