@@ -1,4 +1,4 @@
-### **Problem-Solving Lab: Managing Files and Analyzing Data on an EC2 Instance**
+### **Linux file attributes**
 
 ---
 
