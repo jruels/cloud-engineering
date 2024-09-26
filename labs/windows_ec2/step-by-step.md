@@ -1,4 +1,4 @@
-### Creating a Windows EC2 Instance on AWS**
+### Creating a Windows EC2 Instance on AWS
 
 ---
 
@@ -104,5 +104,4 @@
 ### **Conclusion**
 
 In this lab, you successfully launched a Windows EC2 instance on AWS, configured it with appropriate settings (including network, security groups, and key pair), and connected to it using Remote Desktop Protocol (RDP). By following these steps, you gained practical experience with launching and managing Windows instances in the cloud.
-
 
