@@ -18,7 +18,7 @@ In this lab, you will solve a series of tasks related to downloading, installing
 
 ### **Problem 0: Create and log into an Ubuntu EC2 instance**
 
-Create and log into an Ubuntu EC2 instance. 
+Create and log into an Ubuntu EC2 instance with the username `ubuntu`
 
 ### **Problem 1: Download the Cowsay Package**
 

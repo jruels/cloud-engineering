@@ -8,7 +8,9 @@ In this lab, students will download and install the **Cowsay** package, explore 
 
 ### Step 0: Create and log into an Ubuntu VM
 
-Create and log into an Ubuntu VM.
+Create and log into an Ubuntu VM with the username `ubuntu`
+
+
 
 ### Step 1: Download the Cowsay Package
 
