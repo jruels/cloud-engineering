@@ -16,4 +16,6 @@ Lab 4: [Linux directories and files](labs/linux_directories/)
 Lab 5: [Manage packages in Linux](labs/linux_packages/)  
 Lab 6: [Create a Windows EC2 instance](labs/windows_ec2/)  
 Lab 7: [Use Chocolatey to manage apps on Windows](labs/windows_chocolatey/)  
+Lab 8: [AWS Identify and Access Management](labs/aws_iam/)  
+Lab 7: [AWS Encryption](labs/aws_encryption/)  
 
