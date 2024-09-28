@@ -30,38 +30,11 @@ In this lab, you will create an Auto Scaling Group for a set of EC2 instances to
    - This creates a default VPC with all the necessary components (subnets, internet gateway, route table).
    - After creating the VPC, navigate back to the **EC2 Dashboard**.
 
----
 
-### **Step 2: Launch Three t2.micro Instances (web-1, web-2, web-3)**
-
-1. **Navigate to the EC2 Dashboard**:
-   - In the AWS Management Console, type **EC2** in the search bar and select **EC2** to navigate to the EC2 Dashboard.
-2. **Launch Instances**:
-   - Click **Launch Instance**.
-3. Name it `web-1`
-4. **Select Amazon Linux AMI**:
-   - Select the **Amazon Linux AMI**
-5. **Choose Instance Type**:
-   - Choose **t2.micro**.
-6. **Configure Instance Details**:
-   - Select the **default VPC** that was created earlier.
-   - Enable **Auto-assign Public IP**.
-   - Leave other options as default.
-7. **Add Storage**:
-   - Keep the default storage options.
-8. **Configure Security Group**:
-   - Choose to **Create a new security group**.
-   - Allow **HTTP (port 80)** and **SSH (port 22)** access.
-   - Click **Review and Launch**.
-9. **Launch Instance**:
-   * Choose **Launch Instance**
-
-1. **Repeat for web-2 and web-3**:
-   - Repeat the steps above to launch two more instances, naming them **web-2** and **web-3**.
 
 ---
 
-### **Step 3: Create a Launch Template for Auto Scaling**
+### **Step 2: Create a Launch Template for Auto Scaling**
 
 1. **Navigate to Launch Templates**:
    - In the EC2 Dashboard, click **Launch Templates** under the **Instances** section.
@@ -78,7 +51,7 @@ In this lab, you will create an Auto Scaling Group for a set of EC2 instances to
 
 ---
 
-### **Step 4: Create an Auto Scaling Group**
+### **Step 3: Create an Auto Scaling Group**
 
 1. **Navigate to Auto Scaling Groups**:
    - In the EC2 Dashboard, click **Auto Scaling Groups** on the left-hand side.
@@ -90,43 +63,57 @@ In this lab, you will create an Auto Scaling Group for a set of EC2 instances to
    - Set the following values:
      - **Auto Scaling Group Name**: WebInstances
      - **Launch Template**: Select **WebTemplate** (the one you created earlier).
+     - Click **Next**.
      - **VPC**: Select the default VPC.
      - **Availability Zones**: Choose both available subnets for the default VPC.
+     - Click **Next**.
 
-4. **Configure Scaling Policies**:
+4. **Default routing**: Choose to create a new target group
+
+   * **New target group name**: `web`
+
+5. **Configure Scaling Policies**:
+
    - **Desired Capacity**: 1
+
    - **Minimum Capacity**: 1
+
    - **Maximum Capacity**: 3
-   - Select **Target Tracking Scaling Policy**.
-   - Set **Target Value** to **85% CPU Utilization**.
+
+6. Select **Target Tracking Scaling Policy**.
+
+   - **Scaling poilcy name**: `CPU Average`
+
+   - Set **Target Value** to **60% CPU Utilization**.
+
    - Set **Instances need X seconds warm-up** to **300 seconds**.
+
    - Click **Next** and follow through the steps to create the Auto Scaling Group.
+
+7. After a few minutes, the Auto Scaling Group creates an EC2 instance.
 
 ---
 
-### **Step 5: Generate Load to Test Auto Scaling**
+### **Step 4: Generate Load to Test Auto Scaling**
 
-1. **Install Apache on web-1, web-2, and web-3**:
-   - Connect to each instance via SSH using the key pair you created earlier:
-
-   ```bash
-   ssh -i webkeypair.pem ec2-user@<PUBLIC_IP_OF_INSTANCE>
-   ```
-
-   - Install Apache web server on each instance:
-
+1. **Install Apache on web-1**:
+   
+   - Connect to the instance via SSH using the key pair you created earlier.
+   
+   - Install Apache web server:
+   
    ```bash
    sudo yum install httpd -y
    sudo systemctl start httpd
    sudo systemctl enable httpd
    ```
-
+   
 2. **Generate Load**:
-   - On one of the instances, generate CPU load to simulate high traffic:
+   - On the instance, generate CPU load to simulate high traffic:
 
    ```bash
    sudo yum install stress -y
-   stress --cpu 8 --timeout 300
+   stress --cpu 15 --timeout 300
    ```
 
    - This will generate CPU load for 5 minutes, causing the Auto Scaling Group to launch new instances as the CPU utilization exceeds the target threshold.
@@ -137,7 +124,7 @@ In this lab, you will create an Auto Scaling Group for a set of EC2 instances to
 
 ---
 
-### **Step 6: Clean Up Resources**
+### **Step 5: Clean Up Resources**
 
 1. **Terminate Instances**:
    - Once testing is complete, navigate to the **EC2 Instances** page.
@@ -152,6 +139,5 @@ In this lab, you will create an Auto Scaling Group for a set of EC2 instances to
 
 ---
 
-### **Conclusion**
+## Congratulations! 
 
-In this lab, you successfully launched three EC2 instances, created a default VPC, configured a launch template, and set up an Auto Scaling Group to manage traffic loads. You tested the scaling behavior by generating load, and observed the Auto Scaling Group adding or removing instances based on traffic demand.
