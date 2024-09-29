@@ -1,13 +1,12 @@
 ### **AWS - Auto Scale EC2 instances**
 
-In this lab, you will create an Auto Scaling Group for a set of EC2 instances to dynamically scale in and out based on traffic and load. You will configure and launch three **t2.micro** instances named **web-1**, **web-2**, and **web-3** using the default Amazon Linux image, create a default VPC, and set up an Auto Scaling Group to efficiently manage your infrastructure. You will also test scaling behavior by generating load and observing the automatic scaling of the instances.
+In this lab, you will create an Auto Scaling Group for a set of EC2 instances to dynamically scale in and out based on traffic and load. You will create a default VPC and set up an Auto Scaling Group to manage your infrastructure efficiently. You will also test scaling behavior by generating load and observing the automatic scaling of the instances.
 
 ---
 
 ### **Learning Objectives**
 
 - Create a default VPC and set up necessary networking components.
-- Launch three **t2.micro** instances named **web-1**, **web-2**, and **web-3** using the default Amazon Linux image.
 - Configure and create a Launch Template for Auto Scaling.
 - Set up an Auto Scaling Group to automatically adjust instance count based on load.
 - Test the scaling behavior by generating load on the instances and observing how Auto Scaling responds.

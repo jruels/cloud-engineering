@@ -29,7 +29,7 @@ By the end of this lab, you will:
 ### Create a KMS Key:
 1. In the search bar at the top, type **KMS** and select **Key Management Service** from the results.
 2. In the left sidebar, click **Customer managed keys**, then click **Create key**.
-3. For **Key type**, select **Symmetric** (the default) and click **Next**. Symmetric keys are typically used for data encryption because they use the same key for both encryption and decryption.
+3. For **Key type**, select **Symmetric** (the default). Symmetric keys are typically used for data encryption because they use the same key for encryption and decryption.
 4. For **Key usage**, leave it as **Encrypt and decrypt** and click **Next**.
 5. Provide a name for your key, such as `my-data-encryption-key`, and optionally provide a description. Click **Next**.
 6. On the **Define key administrative permissions** page, select the IAM roles or users who should be able to manage this key. For now, select your admin user or role and click **Next**.
