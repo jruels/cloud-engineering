@@ -23,4 +23,5 @@ Lab 11: [AWS CloudShell - Terraform](labs/tf_cloudshell)
 Lab 12: [Deploy a VM with Terraform](labs/tf-first-instance/)  
 Lab 13: [Use Terraform variables](labs/tf-variables-and-output/)  
 Lab 14: [Terraform multi resource deployment](labs/tf-more-variables/)  
+Lab 15: [Terraform write a module](labs/tf-write-module/)  
 
