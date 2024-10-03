@@ -4,7 +4,6 @@ This site includes the labs for class.
 
 
 ## Lab VMs  
-[//]: # (https://docs.google.com/spreadsheets/d/1psMAAPxgHq9wpZVftao9UT8MIWR1xljq-WB8aOiVBRI/edit?usp=sharing)  
 Instructor will provide lab VM sheet.
 
 ## Labs
