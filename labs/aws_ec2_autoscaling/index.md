@@ -95,17 +95,9 @@ In this lab, you will create an Auto Scaling Group for a set of EC2 instances to
 
 ### **Step 4: Generate Load to Test Auto Scaling**
 
-1. **Install Apache on web-1**:
+1. **Connect to the server created by the auto-scaling group**:
    
    - Connect to the instance via SSH using the key pair you created earlier.
-   
-   - Install Apache web server:
-   
-   ```bash
-   sudo yum install httpd -y
-   sudo systemctl start httpd
-   sudo systemctl enable httpd
-   ```
    
 2. **Generate Load**:
    - On the instance, generate CPU load to simulate high traffic:
@@ -127,7 +119,7 @@ In this lab, you will create an Auto Scaling Group for a set of EC2 instances to
 
 1. **Terminate Instances**:
    - Once testing is complete, navigate to the **EC2 Instances** page.
-   - Select all instances (web-1, web-2, and web-3) and click **Terminate**.
+   - Select all instances and click **Terminate**.
 
 2. **Delete Auto Scaling Group**:
    - Navigate to the **Auto Scaling Groups** page.

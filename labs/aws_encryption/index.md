@@ -1,5 +1,3 @@
-Here is a step-by-step version of the **AWS Data Protection and Encryption Lab** using **`us-west-1`** region:
-
 ---
 
 # **AWS Data Protection and Encryption Lab**
@@ -45,7 +43,8 @@ By the end of this lab, you will:
 2. Click **Create bucket**.
 3. Enter a unique name for your bucket, such as `my-encrypted-bucket-[your-initials]`.
 4. In the **Region** dropdown, ensure that **us-west-1 (N. California)** is selected.
-5. Scroll down to the **Bucket settings for Block Public Access** section and leave the default settings to block all public access.
+5. Scroll down to the **Bucket settings for Block Public Access** section and uncheck it to enable public access.
+   * Check the box acknowledging the bucket objects will be public
 6. Scroll to the **Default encryption** section.
 7. Select **Enable** and choose **AWS Key Management Service (SSE-KMS)**.
 8. Under **AWS KMS key**, select **my-data-encryption-key** (the key you created in Step 2).
@@ -56,6 +55,15 @@ By the end of this lab, you will:
 2. Click **Upload**, then click **Add files** and choose a test file from your computer to upload.
 3. After selecting the file, click **Upload** to complete the process.
 4. AWS will automatically encrypt the object using your KMS key. You can verify this by selecting the uploaded object, then checking the **Encryption** section in the **Properties** tab, where you should see **AWS-KMS** listed as the encryption method.
+
+### Confirm the Object is Encrypted:
+
+1. After uploading the object, click **Close** in the top right corner to return the S3 bucket page. 
+2. Select your uploaded object 
+3. In the top right corner click **Open** to view the file in a new browser tab. 
+   * Notice the URL contains the decryption key, allowing you to access the object. 
+4. Now, copy the "Object URL" from the S3 bucket page. 
+5. Try to load it in a browser and notice how access is denied without the decryption key.
 
 ---
 
@@ -103,12 +111,46 @@ By the end of this lab, you will:
 
 ### Enable HTTPS for S3 Bucket Access:
 1. In the S3 Management Console, select your bucket (`my-encrypted-bucket-[your-initials]`).
+
 2. Click **Permissions**, then scroll down to **Bucket policy**.
-3. Add the following bucket policy to require HTTPS access:
+
+3. Add the following bucket policy to enable public access to the files.
+
+    * Replace the `[Bucket-Name]` placeholder with your actual bucket name.
+
+    ```json
+    {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Sid": "PublicReadGetObject",
+                "Effect": "Allow",
+                "Principal": "*",
+                "Action": [
+                    "s3:GetObject"
+                ],
+                "Resource": [
+                    "arn:aws:s3:::[Bucket-Name]/*"
+                ]
+            }
+        ]
+    }
+    ```
+
+4. Upload a file and use `wget` to download it over **HTTP**
+
+5. Update the bucket policy to require HTTPS access:
     ```json
     {
       "Version": "2012-10-17",
       "Statement": [
+        {
+          "Sid": "PublicReadGetObject",
+          "Effect": "Allow",
+          "Principal": "*",
+          "Action": "s3:GetObject",
+          "Resource": "arn:aws:s3:::testhttps-jrs/*"
+        },
         {
           "Sid": "ForceSSLOnlyAccess",
           "Effect": "Deny",
@@ -127,22 +169,16 @@ By the end of this lab, you will:
       ]
     }
     ```
-4. Replace `my-encrypted-bucket-[your-initials]` with your actual bucket name, then click **Save changes**.
-5. Now, if anyone tries to access your S3 bucket via an insecure HTTP connection, they will be denied.
+
+6. Replace `my-encrypted-bucket-[your-initials]` with your actual bucket name, then click **Save changes**.
+
+7. Now, if anyone tries to access your S3 bucket via an insecure HTTP connection, they will be denied.
 
 ### Verify HTTPS Access:
-1. Try to access the objects in your S3 bucket using an HTTP link (you should receive an error).
+1. Use `get` to access the objects in your S3 bucket using an HTTP link (you should receive an error).
 2. Access the objects via HTTPS (you should be able to download them successfully).
 
 ---
-
-## **Step 6: Manage Data Encryption Best Practices**
-
-### Enable Key Rotation:
-1. In the AWS Management Console, navigate to **KMS** and select **Customer managed keys** from the left menu.
-2. Click on **my-data-encryption-key**.
-3. In the key details page, scroll down to the **Key rotation** section.
-4. Toggle on **Automatic key rotation** to enable yearly automatic key rotation.
 
 ### Monitor Key Usage with AWS CloudTrail:
 1. In the AWS Management Console, type **CloudTrail** in the search bar and select **CloudTrail**.
@@ -155,6 +191,6 @@ By the end of this lab, you will:
 In this lab, you successfully:
 - Created a KMS key and used it to encrypt data at rest in S3 and EBS.
 - Secured data in transit using SSL/TLS with S3.
-- Applied encryption best practices, including enabling key rotation and monitoring key usage with CloudTrail.
+- Applied encryption best practices, including monitoring key usage with CloudTrail.
 
-By completing this lab, you now have a solid understanding of how to implement data protection and encryption in AWS using KMS, S3, and EBS.
+By completing this lab, you now understand how to implement data protection and encryption in AWS using KMS, S3, and EBS.
