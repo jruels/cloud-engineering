@@ -1,4 +1,7 @@
 ---
+title: "AWS Data Protection and Encryption Lab"
+---
+---
 
 # **AWS Data Protection and Encryption Lab**
 
