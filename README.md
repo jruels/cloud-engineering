@@ -23,4 +23,6 @@ Lab 12: [Deploy a VM with Terraform](labs/tf-first-instance/)
 Lab 13: [Use Terraform variables](labs/tf-variables-and-output/)  
 Lab 14: [Terraform multi resource deployment](labs/tf-more-variables/)  
 Lab 15: [Terraform write a module](labs/tf-write-module/)  
+Lab 16: [Terraform and Ansible](labs/ansible_vms/)  
+Lab 17: [Integrating Terraform and Ansible](labs/tf_ansible_vms/)  
 
