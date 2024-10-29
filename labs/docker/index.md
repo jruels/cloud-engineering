@@ -6,7 +6,7 @@ title: "Docker Fundamentals"
 # **Docker Fundamentals Lab**
 
 ### **Introduction**
-This lab walks you through the steps to implement encryption in AWS using AWS Key Management Service (KMS), Amazon S3, and Amazon Elastic Block Store (EBS). You will learn how to protect data both at rest and in transit by creating and managing encryption keys, encrypting storage resources, and ensuring data security during transmission.
+This lab guides you through deploying an AWS EC2 instance, installing and configuring Docker, and containerizing a Python application. You will learn essential skills for setting up infrastructure, handling containerized applications, and testing access within a secure network configuration, focusing on local and external access to deployed services.
 
 ---
 
@@ -16,6 +16,7 @@ By the end of this lab, you will:
 2. Install Docker.
 3. Build a Docker image.
 4. Start a container
+5. Enable external access
 
 ---
 
