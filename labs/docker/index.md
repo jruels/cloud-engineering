@@ -46,7 +46,7 @@ By the end of this lab, you will:
 2. Update the `apt` cache and Install Docker
 
    ```bash
-   sudo apt update && sudo apt install docker docker-buildx -y
+   sudo apt update && sudo apt install docker.io docker-buildx -y
    ```
 3. Add your user to the `docker` group
 
