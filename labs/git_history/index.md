@@ -1,4 +1,4 @@
-# Use Git to rewrite history
+# Explore Git
 
 This lab gives more hands-on time with `git`. You will checkout specific commits, tag them, revert, and rollback. 
 
