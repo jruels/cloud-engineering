@@ -6,9 +6,7 @@ This lab gives more hands-on time with `git`. You will checkout specific commits
 
 ### Objectives
 
-* In GitLab, create a new private project named `git history`
-
-* Clone the repository to our CloudShell `gitlab` working directory
+* Create a directory named `git` and enter it. 
 
 * Create `Hello.java` containing the following
 
@@ -21,6 +19,8 @@ This lab gives more hands-on time with `git`. You will checkout specific commits
       }
   }
   ```
+
+* Initialize a new repository
 
 * Add the file to the repository, and commit it
 
@@ -58,15 +58,15 @@ This lab gives more hands-on time with `git`. You will checkout specific commits
 
 * Commit the change
 
-Now that we've got a few changes in our repository, let's play use the `git log` command. 
+Now that we've got a few changes in our repository let's use the `git log` command. 
 
-We can see the history of our project, including all of our previous commits, by using `git log`. This is extremely useful because this is how we can revert our code back to previous versions that we committed.
+Using `git log`, we can see the history of our project, including all of our previous commits. This is extremely useful because it allows us to revert our code to previous versions.
 
 View the history
 
 `git log`
 
-As you can see in the output we have a commit for each of the changes we've made in the repository.
+As you can see in the output, we have a commit for each of the changes we've made in the repository.
 
 The `git log` command is extremely customizable. 
 
